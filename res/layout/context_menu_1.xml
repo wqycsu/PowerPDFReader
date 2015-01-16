@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/context_menu_first"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/context_menu_bg" >
+    <HorizontalScrollView 
+        android:id="@+id/menu_first_hscroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dp"
+        android:scrollbars="none">
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+	        <TextView 
+	            android:id="@+id/menu_first_select_text"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="18sp"
+	            android:layout_centerVertical="true"
+	            android:textColor="@color/text_click"
+	            android:gravity="center"
+	            android:text="@string/select_text"/>
+	        <View
+	            android:id="@+id/line1" 
+	            android:layout_width="1px"
+	            android:layout_height="30dp"
+	            android:layout_centerVertical="true"
+	            android:layout_toRightOf="@id/menu_first_select_text"
+	            android:layout_marginLeft="5dp"
+	            android:background="#ffffff"/>
+	        <TextView 
+	            android:id="@+id/menu_first_insert_audio"
+	            android:layout_toRightOf="@id/line1"
+	            android:layout_marginLeft="5dp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="18sp"
+	            android:layout_centerVertical="true"
+	            android:textColor="@color/text_click"
+	            android:gravity="center"
+	            android:text="@string/insert_audio"/>
+	        
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

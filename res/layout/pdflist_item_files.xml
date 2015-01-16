@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pdflist_item_bg" >
+    <ImageView
+        android:id="@+id/pdf_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/pdf_icon"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="3dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView 
+        android:id="@+id/pdflist_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/pdf_image"
+        android:layout_marginLeft="20dp"/>
+	<Button
+	    android:id="@+id/pdflist_delete"
+	    android:layout_width="wrap_content"
+	    android:layout_height="35dp"
+	    android:layout_centerVertical="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="10dp"
+	    android:text="@string/delete"
+	    android:padding="3dp"
+	    android:visibility="invisible"
+	    android:background="@drawable/coner_shape_delete_button"/>
+</RelativeLayout>

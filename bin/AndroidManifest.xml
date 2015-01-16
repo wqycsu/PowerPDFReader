@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.csu.powerpdf"
+	android:versionCode="50"
+	android:installLocation="auto">
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<supports-screens
+		android:smallScreens="true"
+		android:normalScreens="true"
+		android:largeScreens="true"
+		android:anyDensity="true" />
+	<uses-sdk android:minSdkVersion="11" android:targetSdkVersion="15"/>
+	<application
+		android:label="@string/app_name"
+		android:icon="@drawable/icon"
+		android:largeHeap="true"
+		android:hardwareAccelerated="true">
+		<activity
+		    android:name="com.csu.loading.LoadingActivity"
+		    android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity
+			android:name="ChoosePDFActivity"
+			android:theme="@style/AppBaseTheme"
+			android:label="@string/app_name">
+		</activity>
+		<activity
+			android:name="com.csu.loading.LoginActivity"
+			android:theme="@style/AppBaseTheme"
+			android:label="@string/app_name">
+		</activity>
+		<activity
+			android:name="MuPDFActivity"
+			android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="application/vnd.ms-xpsdocument"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="application/pdf"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="application/x-cbz"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<category android:name="android.intent.category.BROWSABLE"/>
+				<data android:scheme="file"/>
+				<data android:mimeType="*/*"/>
+				<data android:pathPattern=".*\\.xps"/>
+				<data android:host="*"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<category android:name="android.intent.category.BROWSABLE"/>
+				<data android:scheme="file"/>
+				<data android:mimeType="*/*"/>
+				<data android:pathPattern=".*\\.pdf"/>
+				<data android:host="*"/>
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<category android:name="android.intent.category.BROWSABLE"/>
+				<data android:scheme="file"/>
+				<data android:mimeType="*/*"/>
+				<data android:pathPattern=".*\\.cbz"/>
+				<data android:host="*"/>
+			</intent-filter>
+		</activity>
+		<activity
+			android:name="OutlineActivity"
+			android:theme="@style/AppBaseTheme"
+			android:label="@string/outline_title">
+		</activity>
+		<activity
+			android:name="PrintDialogActivity"
+			android:theme="@style/AppBaseTheme"
+			android:label="@string/print">
+		</activity>
+	</application>
+</manifest> 

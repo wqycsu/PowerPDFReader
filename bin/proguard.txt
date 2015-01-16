@@ -1,0 +1,64 @@
+# view AndroidManifest.xml #generated:20
+-keep class com.csu.loading.LoadingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:34
+-keep class com.csu.loading.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:29
+-keep class com.csu.powerpdf.ChoosePDFActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:39
+-keep class com.csu.powerpdf.MuPDFActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:86
+-keep class com.csu.powerpdf.OutlineActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:91
+-keep class com.csu.powerpdf.PrintDialogActivity { <init>(...); }
+
+# view res/layout/activity_login.xml #generated:96
+-keep class com.csu.view.matchview.util.MatchView { <init>(...); }
+
+# onClick res/layout/buttons.xml #generated:326
+-keepclassmembers class * { *** OnAcceptButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:302
+-keepclassmembers class * { *** OnCancelAcceptButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:206
+-keepclassmembers class * { *** OnCancelDeleteButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:143
+# onClick res/layout/buttons.xml #generated:250
+-keepclassmembers class * { *** OnCancelMoreButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:92
+-keepclassmembers class * { *** OnCancelSearchButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:272
+-keepclassmembers class * { *** OnCopyTextButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:231
+-keepclassmembers class * { *** OnDeleteButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:284
+-keepclassmembers class * { *** OnEditAnnotButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:154
+-keepclassmembers class * { *** OnHighlightButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:187
+-keepclassmembers class * { *** OnInkButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:73
+-keepclassmembers class * { *** OnMoreButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:261
+-keepclassmembers class * { *** OnPrintButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:176
+-keepclassmembers class * { *** OnStrikeOutButtonClick(...); }
+
+# onClick res/layout/buttons.xml #generated:165
+-keepclassmembers class * { *** OnUnderlineButtonClick(...); }
+

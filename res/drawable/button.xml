@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape>
+            <!-- 填充颜色 -->
+            <solid android:color="@color/button_pressed" />
+
+            <padding android:bottom="8dp" android:left="8dp" android:right="8dp" android:top="8dp" />
+        </shape></item>
+    <item android:state_focused="true"><shape>
+            <solid android:color="@color/button_normal" />
+			<!-- 描边 其中dashWidth和dashGap属性分别代表虚线边的宽度和虚线之间的间隔 -->
+            <stroke android:width="4dp" android:color="@color/button_pressed" />
+
+            <padding android:bottom="8dp" android:left="8dp" android:right="8dp" android:top="8dp" />
+        </shape></item>
+    <item><shape>
+            <solid android:color="@color/button_normal" />
+
+            <padding android:bottom="8dp" android:left="8dp" android:right="8dp" android:top="8dp" />
+        </shape></item>
+
+</selector>
